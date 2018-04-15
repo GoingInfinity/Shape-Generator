@@ -19,6 +19,10 @@ $(document).ready(function() {
 
     // Boundaries canvas window
     var viewportBounds = Physics.aabb(5, 5, viewWidth, viewHeight);
+    
+    $('#clear').on('click', function(e) {
+      location.reload();
+    })
 
     // Adds a shape on click
     $('#generate').on('click', function(e) {
