@@ -1,0 +1,55 @@
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <title>Shape Generator</title>
+  <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+
+<body>
+
+  <!-- Drawing board for shapes -->
+  <canvas id="canvas"></canvas>
+
+  <!-- Shape Generator function window -->
+  <div class="shapeGen">
+    <h2>Shape Generator</h2>
+    <p>Use the controls below to generate shapes</p>
+
+    <form id="selection">
+      <!-- Color Selection -->
+      <h3>Select color</h3>
+      <div id="color">
+        <input type="radio" name="color" value="Orange" checked>
+        <span id="orange">Orange</span>
+        <input id="blue" type="radio" name="color" value="Blue">
+        <span id="blue">Blue</span>
+        <input id="green" type="radio" name="color" value="Green">
+        <span id="green">Green</span>
+      </div>
+
+      <!-- Shape Selection -->
+      <h3>Select shape</h3>
+      <div id="shape">
+        <input type="radio" name="shape" value="Square" checked> Square
+        <input type="radio" name="shape" value="Triangle"> Triangle
+        <input type="radio" name="shape" value="Circle"> Circle
+      </div>
+
+      </br>
+      <div id="buttons">
+        <a id="generate">Generate</a>
+        <a id="clear">Clear Screen</a>
+      </div>
+    </form>
+
+  </div>
+
+  <div id="log"></div>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/PhysicsJS/0.7.0/physicsjs-full.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script type='text/javascript' src='index.js'></script>
+</body>
+
+</html>
